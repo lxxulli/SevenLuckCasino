@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+button, input, select{
+    border: 0;
+    background-color: transparent;
+}
+img, button, input{
+    vertical-align: top;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*  */
+header{
+    /* background-color: lightblue; */
+    width: 100%;
+    background-color: #fff;
+}
+header .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+header h1{
+    text-align: center;
+    padding: 15px 0;
+}
+header .gnb{
+    position: absolute;
+    bottom: -18px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* width: 1200px;
+    margin: 0 auto; */
+}
+header .gnb > li{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 80px;
+    position: relative;
+    transition: all 0.7s;
+}
+header .gnb > li > a{
+    display: block;
+    padding-bottom: 20px;
+}
+header .gnb .sub{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    text-align: center;
+    font-size: 15px;
+    color: #eee;
+    display: none;
+    font-weight: normal;
+}
+header .gnb > li:hover .sub{
+    display: block;
+    transition: all 0.3s;
+}
+header .gnb .sub li{
+    display: inline-block;
+    margin: 0 10px;
+}
+header .gnb .sub li:hover{
+    color: #cbc6b2;
+    transition: all 0.3s;
+}
+
+header .util .le{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+header .util .le span{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: #000;
+}
+header .util .ri{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+header .util .ri div::after{
+    content: '|';
+    margin: 0px 15px;
+}
+header .util .ri div:last-child:after{
+    content: '';
+}
+/* header */
+.banner img{
+    width: 100%;
+}
+/* banner */
+.text{
+    text-align: center;
+    color: #777777;
+}
+.text h2{
+    font-size: 40px;
+    color: #111b25;
+    margin: 50px 0;
+    font-family: 'Roboto Slab', serif;
+}
+.text .page{
+    margin: 20px 0 50px;
+    color: #111b25;
+    font-weight: bold;
+    font-size: 17px;
+}
+.text .page::after{
+    content: '▶';
+}
+.text .page:hover{
+    text-decoration: underline;
+}
+/* text */
+.container .wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.container h3{
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+.container .box{
+    margin-bottom: 100px;
+}
+.container .box .top{
+    display: flex;
+    margin-bottom: 30px;
+}
+.container .box .top > div{
+    width: 50%;
+}
+.container .box .top img{
+    width: 100%;
+}
+.container .box .top .txt{
+    font-family: 'Coda Caption', sans-serif;
+    font-size: 90px;
+    line-height: 90%;
+    color: #eeeeee;
+    letter-spacing: -5px;
+    margin: auto 0 auto 10px;
+}
+.container .box .top .txt span{
+    font-size: 80px;
+}
+.container .box .bottom{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row-reverse; */
+}
+.container .box .bottom .subtxt{
+    width: 55%;
+    text-align: center;
+    color: #777;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .box .bottom .subtxt h4{
+    margin-bottom: 20px;
+    color: #111;
+}
+.container .box .bottom .subtxt button{
+    margin-top: 30px;
+    border: 1px solid #cbc6b2;
+    color: #7d5943;
+    transition: all 0.7s;
+}
+.container .box .bottom .subtxt button a{
+    display: block;
+    padding: 5px;
+}
+.container .box .bottom .subtxt button:hover{
+    color: #fff;
+    background-color: #cbc6b2;
+}
+.container .box .bottom .thumb{
+    display: flex;
+}
+.container .box .bottom .thumb p{
+    writing-mode: vertical-rl;
+    color: #7d5943;
+}
+.container .box .bottom img{
+    width: 100%;
+}
+.container .other .top{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .other .top .txt{
+    margin: 0;
+    text-align: right;
+    margin: auto 0 auto 10px;
+    height: 100%;
+}
+.container .other .bottom{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .other .bottom .thumb{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .other .bottom .thumb p{
+    transform: rotate(180deg);
+    text-align: right;
+}
+/* container */
+
+.game{
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+}
+.game h3{
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+.game .icon .box{
+    display: flex;
+    /* background-color: #777777; */
+}
+.game .icon .box li{
+    width: calc(100% / 5);
+    height: 175px;
+    text-align: center;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+.game .icon .box li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 15px; */
+}
+.game .icon img{
+    width: 150px;
+}
+.game .icon .box li span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+}
+.game .icon .box li:hover span{
+    display: flex;
+    transition: all 0.7s;
+}
+/* game */
+footer{
+    margin-top: 50px;
+    text-align: center;
+    background-color: #111b25;
+    color: #ccc;
+    font-size: 12px;
+}
+footer .futil{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+footer .futil li:nth-child(2) a{
+    color: darkred;
+}
+footer .futil li:after{
+    content: '|';
+    margin: 0 10px;
+}
+footer .futil li:last-child:after{
+    content: none;
+}
+footer .number{
+    display: flex;
+    justify-content: center;
+}
+footer .sns{
+    margin: 10px 0;
+}
+footer .copy{
+    padding-bottom: 15px;
+    color: #777;
+    font-size: 11px;
+}
